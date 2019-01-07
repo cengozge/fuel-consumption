@@ -48,10 +48,10 @@ long driverID 							   	(Ex. 12345)
 This directs me to configure db settings in .yml as H2 for now and Oracle, MySQL with empty values and set active profile as profile of H2
 
 ## Technical Req. 2- The application initially will have only RESTful API with JSON payloads in response, but won't be limited only to this interface in the future.
-This directs me to use ResponseEntity  !!!but it is Spring specific!!!
+This directs me to return List or String which is converted to JSON by framework.
 
 ## Technical Req. 3- Data validation should be performed before persisting and corresponding error message should be returned in case of invalid input.
-This directs me to use 
+This directs me to use @Valid annotation in Request body.
 
 ## Functional Req. 1- It should be possible to register 
 -one single record: This directs me to design a POST endpoint to register one record
